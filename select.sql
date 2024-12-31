@@ -45,3 +45,9 @@ SELECT * FROM student WHERE age > 25;
 SELECT * FROM student WHERE course = 'Computer Science' AND grade = 'A';
 
 SELECT * FROM student WHERE course = 'Computer Science' OR course = 'Mathematics';
+
+SELECT upper(name) FROM student as name_upper;
+
+SELECT length(name) FROM student;
+
+SELECT avg(age) FROM student;
