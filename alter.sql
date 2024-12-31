@@ -33,3 +33,6 @@ ALTER Table person
 -- remove a constraint from a column
 ALTER TABLE person
     DROP CONSTRAINT person_name_unique;
+    
+-- truncate the table
+TRUNCATE TABLE person;    
