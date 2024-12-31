@@ -50,4 +50,4 @@ SELECT upper(name) FROM student as name_upper;
 
 SELECT length(name) FROM student;
 
-SELECT avg(age) FROM student;
+SELECT max(age) FROM student;
