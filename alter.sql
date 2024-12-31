@@ -25,3 +25,11 @@ ALTER TABLE person
 -- remove the constraint of a column
 ALTER TABLE person
     ALTER COLUMN full_name DROP NOT NULL;
+
+-- add a constraint to a column
+ALTER Table person
+    ADD CONSTRAINT person_name_unique UNIQUE (full_name);   
+
+-- remove a constraint from a column
+ALTER TABLE person
+    DROP CONSTRAINT person_name_unique;
