@@ -54,4 +54,21 @@ SELECT max(age) FROM student;
 
 SELECT * from student WHERE NOT age > 25;
 
+-- The COALESCE() function returns the first non-null value among its arguments.
 SELECT COALESCE(grade, 'N/A') FROM student;
+
+-- IN and NOT IN operators are used to specify multiple values in a WHERE clause.
+SELECT * FROM student WHERE grade IN ('A','B');
+
+SELECT * FROM student WHERE grade NOT IN ('A','B');
+
+
+-- The BETWEEN operator is used to select values within a range.
+SELECT * FROM student WHERE age BETWEEN 20 AND 25 ORDER BY age DESC
+
+-- The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+SELECT * FROM student WHERE name LIKE 'J%';
+SELECT * FROM student WHERE name LIKE '_a%';
+
+-- The ILIKE operator is a case-insensitive version of the LIKE operator.
+SELECT * FROM student WHERE name ILIKE 'j%';
