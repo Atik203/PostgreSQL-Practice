@@ -51,3 +51,7 @@ SELECT upper(name) FROM student as name_upper;
 SELECT length(name) FROM student;
 
 SELECT max(age) FROM student;
+
+SELECT * from student WHERE NOT age > 25;
+
+SELECT COALESCE(grade, 'N/A') FROM student;
