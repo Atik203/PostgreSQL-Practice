@@ -72,3 +72,13 @@ SELECT * FROM student WHERE name LIKE '_a%';
 
 -- The ILIKE operator is a case-insensitive version of the LIKE operator.
 SELECT * FROM student WHERE name ILIKE 'j%';
+
+-- Pagination using LIMIT and OFFSET
+
+SELECT * FROM student LIMIT 5 OFFSET 2;
+
+DELETE FROM student WHERE id = 16;
+
+UPDATE student SET age = 36 WHERE id = 15;
+ UPDATE student SET age = 36, grade = 'A' 
+ WHERE id = 15;
